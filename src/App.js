@@ -1,23 +1,5 @@
-import React from "react";
-import { TextField } from "@material-ui/core";
-import TownDropDown from "./components/form/ownDropDown";
-
-const InputFields = () => {
-  const columns = ["storey", "floor area (sqm)", "remaining lease"];
-  return columns.map((column) => {
-    return (
-      <div>
-        <TextField
-          id={column}
-          label={column}
-          variant="outlined"
-          color="secondary"
-        />
-        <br />
-      </div>
-    );
-  });
-};
+import TownDropDown from "./components/form/TownDropDown";
+import InputFields from "./components/form/InputFields";
 
 const App = () => {
   return (
